@@ -116,22 +116,20 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<rails>, [">= 3.1.0"])
       s.add_dependency(%q<rspec>, ["~> 2.10.0"])
-      s.add_dependency(%q<after_commit_action>, [">= 0"])
       s.add_dependency(%q<awesome_print>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, [">= 1.2.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-      s.add_dependency(%q<after_commit_action>, ["~> 0.1.3"])
+      s.add_dependency(%q<after_commit_action>, "~> 0.1.3", ">= 0")
     end
   else
     s.add_dependency(%q<rails>, [">= 3.1.0"])
     s.add_dependency(%q<rspec>, ["~> 2.10.0"])
-    s.add_dependency(%q<after_commit_action>, [">= 0"])
     s.add_dependency(%q<awesome_print>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, [">= 1.2.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-    s.add_dependency(%q<after_commit_action>, ["~> 0.1.3"])
+    s.add_dependency(%q<after_commit_action>, "~> 0.1.3", ">= 0")
   end
 end
 
