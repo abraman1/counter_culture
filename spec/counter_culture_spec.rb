@@ -1,23 +1,6 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
-
-require 'models/company'
-require 'models/industry'
-require 'models/product'
-require 'models/review'
-require 'models/user'
-require 'models/category'
-require 'models/has_string_id'
-require 'models/simple_main'
-require 'models/simple_dependent'
-
-require 'database_cleaner'
-DatabaseCleaner.strategy = :deletion
+require 'spec_helper'
 
 describe "CounterCulture" do
-  before(:each) do
-    DatabaseCleaner.clean
-  end
-
   it "increments counter cache on create" do
     user = User.create
     product = Product.create
